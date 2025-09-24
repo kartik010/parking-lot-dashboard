@@ -45,7 +45,7 @@ const Page: React.FC = () => {
       <nav className="bg-white shadow-sm border-b">
         <div className="max-w-7xl mx-auto px-3 sm:px-4">
           <div className="flex justify-between h-14 sm:h-16">
-            <h1 className="text-lg sm:text-xl font-bold text-gray-900">Parking Lot Admin</h1>
+            <h1 className="flex items-center text-lg sm:text-xl font-bold text-gray-900">Parking Lot Admin</h1>
             <div className="flex space-x-2 sm:space-x-4">
               <button onClick={() => setCurrentPage('parking')} className={`flex items-center px-2 sm:px-4 py-2 rounded-lg transition-colors text-sm sm:text-base ${currentPage === 'parking' ? 'bg-blue-100 text-blue-700' : 'text-gray-600 hover:text-gray-900'}`}>
                 <Home className="h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2" />
