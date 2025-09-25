@@ -35,28 +35,28 @@ const ParkingLayout: React.FC<Props> = ({ slots, onAssignCar, totalRevenue }) =>
     <div className="p-3 sm:p-6">
       {/* Summary Cards */}
       <div className="mb-4 sm:mb-6">
-        <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Parking Lot Management</h2>
+        <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-gray-900">Parking Lot Management</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-4 mb-4 sm:mb-6">
           <div className="bg-blue-50 p-3 sm:p-4 rounded-lg">
-            <div className="flex items-center gap-1 sm:gap-2 mb-1">
+            <div className="flex items-center gap-1 sm:gap-2 mb-1 text-gray-900">
               Total Slots
             </div>
             <div className="text-lg sm:text-2xl font-bold text-blue-600">{slots.length}</div>
           </div>
           <div className="bg-green-50 p-3 sm:p-4 rounded-lg">
-            <div className="flex items-center gap-1 sm:gap-2 mb-1">
+            <div className="flex items-center gap-1 sm:gap-2 mb-1 text-gray-900">
               Available
             </div>
             <div className="text-lg sm:text-2xl font-bold text-green-600">{availableSlots}</div>
           </div>
           <div className="bg-red-50 p-3 sm:p-4 rounded-lg">
-            <div className="flex items-center gap-1 sm:gap-2 mb-1">
+            <div className="flex items-center gap-1 sm:gap-2 mb-1 text-gray-900">
               Occupied
             </div>
             <div className="text-lg sm:text-2xl font-bold text-red-600">{occupiedSlots}</div>
           </div>
           <div className="bg-yellow-50 p-3 sm:p-4 rounded-lg col-span-2 sm:col-span-1">
-            <div className="flex items-center gap-1 sm:gap-2 mb-1">
+            <div className="flex items-center gap-1 sm:gap-2 mb-1 text-gray-900">
               Revenue
             </div>
             <div className="text-xl sm:text-3xl font-bold text-yellow-600">${totalRevenue}</div>
