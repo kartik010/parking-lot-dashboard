@@ -55,7 +55,7 @@ const BillingPage: React.FC<Props> = ({ slots, onCloseParkingSlot }) => {
       <h2 className="text-xl sm:text-2xl font-bold mb-4 text-gray-900">Billing & Receipt</h2>
 
       <input type="text" placeholder="Enter Registration Number" value={registrationNumber} onChange={e => setRegistrationNumber(e.target.value)} className="w-full p-2 border border-gray-300 rounded mb-2" />
-      <button onClick={handleGenerateReceipt} className="bg-gray-900 text-white px-3 py-2 rounded hover:bg-gray-900">Generate Receipt</button>
+      <button onClick={handleGenerateReceipt} className="bg-gray-700 text-white px-3 py-2 rounded hover:bg-gray-900">Generate Receipt</button>
       {error && <div className="text-red-600 mt-2">{error}</div>}
 
       {receipt && (
